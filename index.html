@@ -63,7 +63,8 @@
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     padding: 1.5rem 4rem;
     display: flex; justify-content: space-between; align-items: center;
-    transition: background 0.5s ease, padding 0.5s ease, box-shadow 0.5s ease; background: transparent;
+    transition: background 0.5s ease, padding 0.5s ease, box-shadow 0.5s ease; background: rgba(250,247,242,0.75);
+    backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
   }
   nav.scrolled {
     background: rgba(250,247,242,0.95);
@@ -151,7 +152,7 @@
   .hero-desc {
     font-size: 1.1rem; line-height: 1.7;
     color: var(--mauve); margin-top: 1.2rem; max-width: 420px;
-    font-weight: 300;
+    font-weight: 500;
     opacity: 0; animation: fadeUp 1s 0.9s forwards;
   }
   .hero-actions {
@@ -245,6 +246,7 @@
   }
   .about-images {
     position: relative;
+    overflow: visible;
   }
   .about-team-img {
     overflow: hidden; border-radius: 4px;
@@ -288,8 +290,8 @@
   }
   .section-title em { font-style: italic; color: var(--deep-rose); }
   .about-text p {
-    font-size: 1.15rem; line-height: 1.9;
-    color: var(--mauve); margin-bottom: 1.5rem; font-weight: 300;
+    font-size: 1.25rem; line-height: 1.9;
+    color: var(--deep-rose); margin-bottom: 1.5rem; font-weight: 400;
   }
   .about-names {
     display: flex; gap: 2rem; margin-top: 2rem;
@@ -757,12 +759,12 @@
 
     /* ABOUT mobile */
     .about { padding: 3rem 1.5rem; gap: 2rem; }
-    .about-badge { width: 80px; height: 80px; bottom: -1rem; right: -0.5rem; }
+    .about-badge { width: 80px; height: 80px; bottom: -0.5rem; right: 0.5rem; }
     .about-badge span { font-size: 0.4rem; }
     .about-badge strong { font-size: 0.9rem; }
     .section-tag { font-size: 0.6rem; margin-bottom: 1rem; }
     .section-title { font-size: 1.8rem; margin-bottom: 1.5rem; }
-    .about-text p { font-size: 1rem; line-height: 1.7; }
+    .about-text p { font-size: 1.08rem; line-height: 1.8; }
     .about-names { gap: 1.5rem; margin-top: 1.5rem; padding-top: 1.5rem; }
 
     /* COLLECTIONS mobile */
